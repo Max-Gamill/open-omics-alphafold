@@ -62,7 +62,6 @@ def run_model_inference(
   output_dir_base:str,
   model_runners: Dict[str, RunModel]
 ):
-  fasta_name = fasta_name.rstrip('.fa').rstrip('.fasta')
   logging.info('run model prediction of {}'.format(fasta_name))
   output_dir = os.path.join(output_dir_base, fasta_name)
   assert os.path.exists(output_dir)
